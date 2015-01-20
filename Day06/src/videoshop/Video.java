@@ -1,6 +1,8 @@
 package videoshop;
 
-public class Video {
+import java.io.Serializable;
+
+public class Video implements Serializable {
 	
 	public static enum MediaType {
 		VHS, DVD, BLUERAY;

@@ -49,7 +49,6 @@ public class Main {
 				tmp = sc.nextLine();
 				try {
 					mediaType = Integer.parseInt(tmp);
-					mediaType -= 1;
 				} catch (NumberFormatException e) {
 				}
 				
@@ -70,66 +69,19 @@ public class Main {
 				// 전체 목록 출력
 				System.out.println("===== 비디오관리 > 조회 =====");
 				
-				// 검색할 비디오 제목 입력
-				System.out.print("검색할 제목: ");
-				String title = sc.nextLine();
-				
-				if (title != null && !title.trim().equals("")) {
-					Video video = VIDEO_INVEN.get(title);
-					System.out.println("  검색결과:");
-					if (video != null) {
-						System.out.println("    제목: " + video.getTitle());
-						System.out.println("    감독: " + video.getDirector());
-						System.out.println("    타입: "
-								+ Video.MediaType.getName(video.getMediaType()));
-						System.out.println("    ------------");
-					} else {
-						System.out.println("    검색 결과가 없습니다.");
-					}
-				} else {
-					System.out.println("  전체 비디오 목록:");
-					Collection<Video> list = VIDEO_INVEN.values();
-					Iterator<Video> iter = list.iterator();
-					while (iter.hasNext()) {
-						Video v = iter.next();
-						System.out.println("    제목: " + v.getTitle());
-						System.out.println("    감독: " + v.getDirector());
-						System.out.println("    타입: "
-								+ Video.MediaType.getName(v.getMediaType()));
-						System.out.println("    ------------");
-					}
+				Collection<Video> list = VIDEO_INVEN.values();
+				Iterator<Video> iter = list.iterator();
+				while (iter.hasNext()) {
+					Video v = iter.next();
+					System.out.println("제목: " + v.getTitle());
+					System.out.println("감독: " + v.getDirector());
+					System.out.println("타입: "
+							+ Video.MediaType.getName(v.getMediaType()));
+					System.out.println("------------");
 				}
 			}
 			else if (menu.equals("3")) {
-				// 비디오 삭제
-				System.out.println("===== 비디오관리 > 삭제 =====");
-				System.out.print("삭제할 비디오 제목: ");
-				String title = sc.nextLine();
 				
-				Video video = VIDEO_INVEN.get(title);
-				
-				System.out.println("  검색결과:");
-				if (video != null) {
-					System.out.println("    제목: " + video.getTitle());
-					System.out.println("    감독: " + video.getDirector());
-					System.out.println("    타입: "
-							+ Video.MediaType.getName(video.getMediaType()));
-					System.out.println("    ------------");
-					
-					// 삭제 확인
-					System.out.print("정말 삭제하시겠습니까? [y/N]: ");
-					String confirm = sc.nextLine();
-					if (confirm.equalsIgnoreCase("y")) {
-						// 삭제
-						VIDEO_INVEN.remove(title);
-						System.out.println("삭제되었습니다.");
-					} else {
-						// 삭제 취소
-						System.out.println("삭제가 취소되었습니다.");
-					}
-				} else {
-					System.out.println("    검색 결과가 없습니다.");
-				}
 			}
 			else if (menu.equals("0")) {
 				break;

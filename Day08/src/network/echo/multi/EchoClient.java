@@ -14,7 +14,7 @@ public class EchoClient {
 	
 	public static void main(String[] args) throws IOException {
 		
-		Socket sock = new Socket("127.0.0.1", 3000);
+		Socket sock = new Socket("210.125.150.140", 3000);
 		
 		OutputStream out = sock.getOutputStream();
 		InputStream in = sock.getInputStream();

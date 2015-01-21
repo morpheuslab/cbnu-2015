@@ -16,7 +16,8 @@ class EchoWorker extends Thread {
 		this.sock = sock;
 	}
 	public void run() {
-		System.out.println(getName() + ": 스레드 시작");
+		String ipAddr = sock.getInetAddress().getHostAddress();
+		System.out.println(getName() + ": 스레드 시작. from: " + ipAddr);
 		
 		BufferedReader reader = null;
 		BufferedWriter writer = null;

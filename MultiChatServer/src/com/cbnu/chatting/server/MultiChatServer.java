@@ -99,6 +99,8 @@ public class MultiChatServer {
 					// 메시지 처리
 					// 1. in으로부터 메시지를 읽고
 					msg = in.readLine();
+					System.out.println("### " + getName()
+							+ " 수신 메시지: " + msg);
 					// 2. 메시지 유형에 따라 처리
 					rmsg = msg.split("/");
 					// 2-1. "login" 메시지의 경우
@@ -147,6 +149,20 @@ public class MultiChatServer {
 				sendMsgAll("system/alert/" + nick + "님이 로그아웃했습니다.");
 				
 				status = false;
+				
+				// 입출력 스트림 닫기
+				out.close();
+				try {
+					in.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				// 소켓 닫기
+				try {
+					sock.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		

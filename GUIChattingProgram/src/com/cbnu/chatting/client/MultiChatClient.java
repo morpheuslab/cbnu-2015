@@ -10,9 +10,14 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class MultiChatClient implements ActionListener, Runnable {
+	
+	// 채팅 서버 주소
+	private String serverIp;
 	
 	private boolean showingLoginPanel = true;
 	
@@ -36,7 +41,15 @@ public class MultiChatClient implements ActionListener, Runnable {
 	private Container tab;
 	private CardLayout cLayout;
 	
+	// 채팅 메시지 출력 TextArea
+	private JTextArea msgOut;
+	
+	// 윈도우
+	private JFrame window;
+	
 	public MultiChatClient(String serverIp) {
+		this.serverIp = serverIp;
+		
 		// 로그인 패널
 		loginPanel = new JPanel();
 		loginPanel.setLayout(new BorderLayout());	// 레이아웃 설정
@@ -77,16 +90,27 @@ public class MultiChatClient implements ActionListener, Runnable {
 		tab.add(loginPanel, "login");
 		tab.add(logoutPanel, "logout");
 		
+		// 채팅 메시지 출력 부분
+		msgOut = new JTextArea("", 10, 30);
+		msgOut.setEditable(false);
+		
+		// 스크롤 뷰로 msgOut 감싸 줌
+		JScrollPane jsp = new JScrollPane(msgOut,
+				JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
+				JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		
 		// 윈도우 만들기
-		JFrame window = new JFrame("::멀티챗::");
+		window = new JFrame("::멀티챗::");
 		window.setLayout(new BorderLayout());
 		//
 		window.add(tab, BorderLayout.NORTH);
+		window.add(jsp, BorderLayout.CENTER);
 		window.add(msgPanel, BorderLayout.SOUTH);
 		
 		cLayout.show(tab, "login");
 		
 		window.pack();
+		window.setResizable(false);	// 윈도우 크기 변경 불가능하게 설정
 		window.setVisible(true);
 	}
 	
@@ -97,20 +121,58 @@ public class MultiChatClient implements ActionListener, Runnable {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == loginButton
-				|| e.getSource() == logoutButton) {
-			if (showingLoginPanel) {
-				cLayout.show(tab, "logout");
-				showingLoginPanel = false;
-			} else {
-				cLayout.show(tab, "login");
-				showingLoginPanel = true;
-			}
+		Object eventSource = e.getSource();
+		if (eventSource == exitButton) {
+			System.exit(0);
+		}
+		else if (eventSource == loginButton) {
+			// 서버에 접속
+			
+			// 로그아웃 패널 보이기
+			cLayout.show(tab, "logout");
+		}
+		else if (eventSource == logoutButton) {
+			// 서버에 로그아웃 알림
+			
+			// 로그인 패널 보이기
+			cLayout.show(tab, "login");
+		}
+		else if (eventSource == msgInput) {
+			// 메시지 처리
+			
+			// 입력 창 비우기
+			msgInput.setText("");
 		}
 	}
 
 	public static void main(String[] args) {
-		MultiChatClient client = new MultiChatClient("");
+		MultiChatClient client = new MultiChatClient("127.0.0.1");
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,6 +5,12 @@ import java.awt.CardLayout;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.net.UnknownHostException;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -18,6 +24,19 @@ public class MultiChatClient implements ActionListener, Runnable {
 	
 	// 채팅 서버 주소
 	private String serverIp;
+	
+	// 접속 대화명
+	private String nick;
+	
+	// 채팅 서버 접속용 소켓
+	private Socket sock;
+	
+	// 입출력 스트림 객체
+	private BufferedReader in;
+	private PrintWriter out;
+	
+	// 메시지 수신 스레드
+	private Thread msgRcvThread;
 	
 	private boolean showingLoginPanel = true;
 	
@@ -126,7 +145,14 @@ public class MultiChatClient implements ActionListener, Runnable {
 			System.exit(0);
 		}
 		else if (eventSource == loginButton) {
+			// 로그인 대화명 설정
+			nick = nickInput.getText();
+			
 			// 서버에 접속
+			connectServer();
+			
+			// 로그아웃 패널의 label2에 접속 대화명 표시
+			label2.setText("대화명: " + nick);
 			
 			// 로그아웃 패널 보이기
 			cLayout.show(tab, "logout");
@@ -142,6 +168,29 @@ public class MultiChatClient implements ActionListener, Runnable {
 			
 			// 입력 창 비우기
 			msgInput.setText("");
+		}
+	}
+	
+	private void connectServer() {
+		// 채팅서버에 접속
+		try {
+			// 소켓 생성
+			sock = new Socket(serverIp, 3000);
+			System.out.println("[Client] 채팅 서버 접속 성공");
+			
+			// 입출력 스트림 생성
+			in = new BufferedReader(
+					new InputStreamReader(sock.getInputStream()));
+			out = new PrintWriter(sock.getOutputStream(), true);
+			
+			// 서버에 로그인 메시지 전송
+			out.println(nick + "/login");
+			
+			// 메시지 수신을 위한 스레드 생성 및 시작
+			msgRcvThread = new Thread(this);
+			msgRcvThread.start();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 

@@ -188,14 +188,41 @@ public class MultiChatClient implements ActionListener, Runnable {
 			cLayout.show(tab, "logout");
 		}
 		else if (eventSource == logoutButton) {
+			
+			if (msgRcvThread != null) {
+				msgRcvThread.interrupt();
+			}
+			
 			// 서버에 로그아웃 알림
+			out.println(nick + "/logout");
+			
+			// 입출력 스트림 닫기
+			try {
+				in.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+			out.close();
+			
+			// 소켓 닫기
+			try {
+				sock.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+			
+			// 메시지 수신 스레드 동작 플래그 false 설정
+			msgRcvThreadRunning = false;
+			
+			// 로그인 대화명 null 설정
+			nick = null;
 			
 			// 로그인 패널 보이기
 			cLayout.show(tab, "login");
 		}
 		else if (eventSource == msgInput) {
 			// 메시지 처리
-			
+			out.println(nick + "/chat/" + msgInput.getText());
 			// 입력 창 비우기
 			msgInput.setText("");
 		}
@@ -226,7 +253,8 @@ public class MultiChatClient implements ActionListener, Runnable {
 	}
 
 	public static void main(String[] args) {
-		MultiChatClient client = new MultiChatClient("127.0.0.1");
+		MultiChatClient client
+			= new MultiChatClient("210.125.150.140");
 	}
 
 }

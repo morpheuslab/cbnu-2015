@@ -124,7 +124,7 @@ public class MultiChatServer {
 					// 2-3. 일반 메시지의 경우
 					else if (rmsg[1].equals("chat")) {
 						// 모든 클라이언트에 rmsg[2]를 전송
-						sendMsgAll(rmsg[2]);
+						sendMsgAll(rmsg[0] + "/chat/" + rmsg[2]);
 					}
 					// 2-4. 알 수 없는 메시지 유형
 					else {

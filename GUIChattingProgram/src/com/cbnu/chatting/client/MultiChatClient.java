@@ -38,6 +38,9 @@ public class MultiChatClient implements ActionListener, Runnable {
 	// 메시지 수신 스레드
 	private Thread msgRcvThread;
 	
+	// 메시지 수신 스레드 동작 플래그
+	private boolean msgRcvThreadRunning = false;
+	
 	private boolean showingLoginPanel = true;
 	
 	// 로그인 패널
@@ -133,9 +136,36 @@ public class MultiChatClient implements ActionListener, Runnable {
 		window.setVisible(true);
 	}
 	
+	// MultiChatClient 객체가 Runnable로서 할 일
 	@Override
 	public void run() {
+		String msg = null;
+		String[] rmsg = null;
 		
+		// 계속 반복하여
+		while (msgRcvThreadRunning) {
+			try {
+				// 채팅 서버로부터 메시지를 수신하고
+				msg = in.readLine();
+				// 메시지 파싱
+				rmsg = msg.split("/");
+				// 수신한 메시지를 메세지 화면에 추가
+				if (rmsg[1].equals("chat")) {	// 일반 메시지
+					msgOut.append(rmsg[0] + "> " + rmsg[2] + "\n");
+				}
+				else if (rmsg[0].equals("system") &&
+						rmsg[1].equals("alert")) {	// 서버 alert 메시지
+					msgOut.append("SYSTEM: " + rmsg[2] + "\n");
+				}
+				// 커서를 맨 아래로
+				msgOut.setCaretPosition(msgOut.getDocument().getLength());
+			} catch (IOException e) {
+				msgRcvThreadRunning = false;
+				e.printStackTrace();
+			}
+		}
+		
+		System.out.println("[Client] 메시지 수신 스레드 종료");
 	}
 
 	@Override
@@ -188,6 +218,7 @@ public class MultiChatClient implements ActionListener, Runnable {
 			
 			// 메시지 수신을 위한 스레드 생성 및 시작
 			msgRcvThread = new Thread(this);
+			msgRcvThreadRunning = true;	// 수신 스레드 반복 조건
 			msgRcvThread.start();
 		} catch (Exception e) {
 			e.printStackTrace();

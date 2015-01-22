@@ -92,7 +92,8 @@ public class MultiChatServer {
 				String msg = null;
 				String[] rmsg = null;
 				
-				System.out.println("### 채팅 스레드 시작: " + getName());
+				System.out.println("### 채팅 스레드 시작: " + getName()
+						+ " (" + sock.getInetAddress().getHostAddress() + ")");
 			
 				while (status) {
 					// 메시지 처리
@@ -132,7 +133,11 @@ public class MultiChatServer {
 					}
 				}
 			} catch (IOException e) {
-				e.printStackTrace();
+				System.out.println("### 클라이언트 접속 종료: "
+						+ getName() + " ("
+						+ sock.getInetAddress().getHostAddress()
+						+ ")");
+//				e.printStackTrace();
 			} finally {
 				// 클라이언트 목록에서 이 스레드(this) 제거
 				synchronized (clientList) {

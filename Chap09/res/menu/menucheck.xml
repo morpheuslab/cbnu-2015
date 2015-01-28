@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/submenu"
+		android:title="Sub Menu">
+		<menu>
+			<group android:id="@+id/checkable_group"
+					android:checkableBehavior="all">
+				<item android:id="@+id/bigfont"
+						android:title="BigFont" />
+			</group>
+			<group android:id="@+id/exclusive_checkable_group"
+					android:checkableBehavior="single">
+				<item android:id="@+id/red"
+						android:title="Red" 
+						android:checked="true" />
+				<item android:id="@+id/green"
+						android:title="Green" />
+				<item android:id="@+id/blue"
+						android:title="Blue" />
+			</group>
+		</menu>
+	</item>
+</menu>
+

@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="하나"
+		android:icon="@drawable/ic_launcher" />
+	<item android:title="둘"
+		android:icon="@drawable/ic_launcher" />
+	<item android:title="셋-서브메뉴">
+		<menu>
+			<item android:title="셋-하나" />
+			<item android:title="셋-둘" />
+			<item android:title="셋-셋" />
+		</menu>
+	</item>
+	<item android:title="넷"
+		android:icon="@drawable/ic_launcher"
+		android:showAsAction="ifRoom|withText" />
+	<item android:title="다섯" />
+	<item android:title="여섯" />
+	<item android:title="일곱" />
+	<item android:title="여덟" />
+	<item android:title="아홉" />
+	<item android:title="열" />
+	<item android:title="열하나" />
+	<item android:title="열둘" />
+	<item android:title="열셋" />
+	<item android:title="열넷" />
+</menu>

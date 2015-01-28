@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="검색"
+		android:icon="@android:drawable/ic_menu_search" 
+		android:showAsAction="always|withText"
+		/>
+	<item android:title="추가"
+		android:icon="@android:drawable/ic_menu_add" 
+		android:showAsAction="always|withText"
+		/>
+	<item android:title="설정" />
+	<item android:title="고급 기능" />
+</menu>

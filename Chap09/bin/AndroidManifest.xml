@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chap09"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".examples.OptionMenu" android:label="Chap09 > OptionMenu" />
+        <activity android:name=".examples.OptionMenuXml" android:label="Chap09 > OptionMenuXml" />
+        <activity android:name=".examples.MenuOnClick" android:label="Chap09 > MenuOnClick" />
+        <activity android:name=".examples.ContextMenuTest" android:label="Chap09 > ContextMenuTest" />
+        <activity android:name=".examples.PopupMenuTest" android:label="Chap09 > PopupMenuTest" />
+        <activity android:name=".examples.MenuHistory" android:label="Chap09 > MenuHistory" />
+        <activity android:name=".examples.MenuCheck" android:label="Chap09 > MenuCheck" />
+        <activity android:name=".examples.ChangeMenu" android:label="Chap09 > ChangeMenu" />
+    </application>
+
+</manifest>

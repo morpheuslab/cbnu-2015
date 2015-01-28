@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linear"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#cccccc"
+	>
+<TextView  
+	android:id="@+id/text"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="핸들러에서 외부 변수 액세스 테스트"
+	android:textColor="#000000"
+	/>
+</LinearLayout>

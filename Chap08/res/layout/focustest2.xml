@@ -1,0 +1,19 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<TableRow>
+		<Button android:id="@+id/btn11" android:text="Button 11"
+			android:nextFocusLeft="@+id/btn22" 
+			android:nextFocusUp="@+id/btn21" />
+		<Button android:id="@+id/btn12" android:text="Button 12" 
+			android:nextFocusRight="@id/btn21" 
+			android:nextFocusUp="@id/btn22" />
+	</TableRow>
+	<TableRow>
+		<Button android:id="@id/btn21" android:text="Button 21" 
+			android:nextFocusLeft="@id/btn12" 
+			android:nextFocusDown="@id/btn11" />
+		<Button android:id="@id/btn22" android:text="Button 22" 
+			android:nextFocusRight="@id/btn11" 
+			android:nextFocusDown="@id/btn12" />
+	</TableRow>
+</TableLayout>

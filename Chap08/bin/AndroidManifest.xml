@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chap08"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".examples.FocusTest" android:label="Chap08 > FocusTest" />
+        <activity android:name=".examples.FocusTest2" android:label="Chap08 > FocusTest2" />
+        <activity android:name=".examples.FreeLine" android:label="Chap08 > FreeLine" />
+        <activity android:name=".examples.Fruit" android:label="Chap08 > Fruit" />
+        <activity android:name=".examples.Fruit2" android:label="Chap08 > Fruit2" />
+        <activity android:name=".examples.HandleEvent" android:label="Chap08 > HandleEvent" />
+        <activity android:name=".examples.HandlerAccess" android:label="Chap08 > HandlerAccess" />
+        <activity android:name=".examples.HandlerOrder" android:label="Chap08 > HandlerOrder" />
+        <activity android:name=".examples.HandlerOrder2" android:label="Chap08 > HandlerOrder2" />
+        <activity android:name=".examples.LongClick" android:label="Chap08 > LongClick" />
+        <activity android:name=".examples.MoveCircle" android:label="Chap08 > MoveCircle" />
+        <activity android:name=".examples.TimerTest" android:label="Chap08 > TimerTest" />
+    </application>
+
+</manifest>

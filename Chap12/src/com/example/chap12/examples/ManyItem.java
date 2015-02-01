@@ -59,7 +59,7 @@ class ManyAdapter extends BaseAdapter {
 		Log.d("ManyItem", log);
 
 		if (toast == null) {
-			toast = Toast.makeText(ctx, log, 0);
+			toast = Toast.makeText(ctx, log, Toast.LENGTH_SHORT);
 		} else {
 			toast.setText(log);
 		}

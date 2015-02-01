@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<EditText  
+	android:id="@+id/edit"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="-Italic-Red-Under-"
+	/>
+<TextView  
+	android:id="@+id/text"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="SmallBlueBig"
+	android:textSize="30sp"
+	android:bufferType="spannable"
+	/>
+<TextView  
+	android:id="@+id/textlink"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="이름 : 홍길동. 프로필 보기. 연락처 수소문하기"
+	android:bufferType="spannable"
+	android:textSize="20sp"
+	android:linksClickable="true"
+	android:textColorLink="#ffff00"
+	/>
+</LinearLayout>

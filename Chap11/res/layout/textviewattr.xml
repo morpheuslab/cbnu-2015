@@ -1,0 +1,278 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="----- 수평 입력 길이 -----"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Normal"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Single Line"
+	android:singleLine="true"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Scroll Horizontal"
+	android:singleLine="true"
+	android:scrollHorizontally="true"
+	/>
+
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="----- 입력 문자 제한 -----"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="aeiou"
+	android:digits="aeiou"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="1234"
+	android:numeric="integer"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="-1234"
+	android:numeric="signed"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="12.34"
+	android:numeric="decimal"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="-12.34"
+	android:numeric="decimal|signed"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="010-123-4567"
+	android:phoneNumber="true"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="pass"
+	android:password="true"
+	/>
+
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="----- 커서 및 포커스 -----"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="selectAllOnFocus"
+	android:selectAllOnFocus="true"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Cursor Test - true"
+	android:cursorVisible = "true"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Cursor Test - false"
+	android:cursorVisible = "false"
+	/>
+
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="auto link test. http://www.soen.kr my home page. aaa@bbb.com mail address"
+	android:autoLink = "web|email"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Shadow Text"
+	android:textSize="20sp"
+	android:textColor="#ffffff"
+	android:shadowColor="#ffff00"
+	android:shadowDx="3.0"
+	android:shadowDy="3.0"
+	android:shadowRadius="3.0"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Wide Text"
+	android:textSize="20sp"
+	android:textScaleX="2.0"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Narrow Text"
+	android:textSize="20sp"
+	android:textScaleX="0.5"
+	/>
+	
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="줄간 점검을 위한 긴 샘플 텍스트. 배수 단위로 줄 수도 있고 일정값을 더할 수도 있다."
+	android:lineSpacingMultiplier = "0.7"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="줄간 점검을 위한 긴 샘플 텍스트. 배수 단위로 줄 수도 있고 일정값을 더할 수도 있다."
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="줄간 점검을 위한 긴 샘플 텍스트. 배수 단위로 줄 수도 있고 일정값을 더할 수도 있다."
+	android:lineSpacingMultiplier = "1.3"
+	android:lineSpacingExtra = "3dip"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="줄간 점검을 위한 긴 샘플 텍스트. 배수 단위로 줄 수도 있고 일정값을 더할 수도 있다."
+	android:lineSpacingMultiplier = "1.3"
+	android:lineSpacingExtra = "8dip"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="강제로 다섯줄을 차지한다.\n둘\n셋\n넷\n다섯"
+	android:lines="5"
+	/>
+<TextView  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="EM Size"
+	android:textSize="20sp"
+	android:textColor="#000000"
+	android:background="#e0e0e0"
+	android:ems="8"
+	/>
+<TextView  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="EM Size"
+	android:textSize="20sp"
+	android:textColor="#000000"
+	android:background="#e0e0e0"
+	android:ems="5"
+	/>
+<TextView  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="EM Size"
+	android:textSize="20sp"
+	android:textColor="#000000"
+	android:background="#e0e0e0"
+	android:ems="3"
+	/>
+	
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="----- 대소문자 변환 -----"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Characters "
+	android:capitalize = "characters"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Words "
+	android:capitalize = "words"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Sentences "
+	android:capitalize = "sentences"
+	/>
+
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="----- 긴 문자열 생략 방법 -----"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="very long sentence for test ellipsize. one two three four five six seven eight nine ten"
+	android:singleLine="true"
+	android:ellipsize="none"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="very long sentence for test ellipsize. one two three four five six seven eight nine ten"
+	android:singleLine="true"
+	android:ellipsize="start"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="very long sentence for test ellipsize. one two three four five six seven eight nine ten"
+	android:singleLine="true"
+	android:ellipsize="middle"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="very long sentence for test ellipsize. one two three four five six seven eight nine ten"
+	android:singleLine="true"
+	android:ellipsize="end"
+	/>
+<TextView
+	android:id="@+id/marqueetext"  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="very long sentence for test ellipsize. one two three four five six seven eight nine ten"
+	android:singleLine="true"
+	android:ellipsize="marquee"
+	android:focusable="true"
+	android:marqueeRepeatLimit="marquee_forever"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="----- 힌트 -----"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text=""
+	android:hint="input your name"
+	android:textColorHint = "#0000ff"
+	/>
+</LinearLayout>
+</ScrollView>

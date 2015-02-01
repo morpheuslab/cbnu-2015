@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="300, 100 adjustViewBounds = false"
+	/>
+<ImageView  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:maxWidth="300px" 
+	android:maxHeight="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/airplane"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="300, 100 adjustViewBounds = true"
+	/>
+<ImageView  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:maxWidth="300px" 
+	android:maxHeight="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/airplane"
+	android:adjustViewBounds="true"
+	/>
+	
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="300, 100 cropToPadding = false"
+	/>
+<ImageView  
+	android:layout_width="200px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/airplane"
+	android:padding="20dip"
+	android:scaleType="centerCrop"
+	android:cropToPadding="false"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="300, 100 cropToPadding = true"
+	/>
+<ImageView  
+	android:layout_width="200px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/airplane"
+	android:padding="20dip"
+	android:scaleType="centerCrop"
+	android:cropToPadding="true"
+	/>
+
+</LinearLayout>
+</ScrollView>	

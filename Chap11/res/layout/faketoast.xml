@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/toastlayout"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<Button
+	android:id="@+id/btnpurchase1"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="최신형 노트북을 반값에 드립니다.\n다시 오지 않을 절호의 찬스\n이번 기회를 놓치지 마세요\n노트북을 받고 싶으신 분은\n이 버튼을 눌러주세요.\n감사합니다."
+	/>
+</LinearLayout>

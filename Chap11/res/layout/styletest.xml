@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#cccccc"
+	>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="blue"
+	android:textColor="#0000ff"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="red 30 sp"
+	style="@style/red30"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="yellow 30 sp"
+	style="@style/yellow30italic"
+	/>
+</LinearLayout>

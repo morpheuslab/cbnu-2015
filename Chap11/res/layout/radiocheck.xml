@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtsample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sample"
+        android:textColor="#ff0000"
+        android:textSize="32sp" />
+
+    <RadioGroup
+        android:id="@+id/colorgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rared"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@id/rared"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/ragreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Green" />
+
+        <RadioButton
+            android:id="@+id/rablue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkwhiteback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="흰색 배경" />
+
+    <ToggleButton
+        android:id="@+id/tglanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="영문"
+        android:textOn="한글" />
+
+</LinearLayout>

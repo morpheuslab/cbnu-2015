@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="무제한 입력 가능"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="세글자 입력 가능(속성)"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:maxLength="3" 
+	/>
+<TextView  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="세글자 입력 가능(필터)"
+	/>
+<EditText  
+	android:id="@+id/limit"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	/>
+</LinearLayout>

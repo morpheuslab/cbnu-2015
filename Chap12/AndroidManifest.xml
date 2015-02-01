@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chap12"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/android:Theme.Holo" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 예제 액티비티 -->
+        <activity android:name=".examples.ListViewTest" android:label="ListViewTest" />
+		<activity android:name=".examples.ListFromArray" android:label="ListFromArray" />
+		<activity android:name=".examples.ListAttr" android:label="ListAttr" />
+		<activity android:name=".examples.ListItemSelect" android:label="ListItemSelect" />
+		<activity android:name=".examples.ListAddDel" android:label="ListAddDel" />
+		<activity android:name=".examples.ListAddDelMulti" android:label="ListAddDelMulti" />
+		<activity android:name=".examples.ListAddDelMulti2" android:label="ListAddDelMulti2" />
+		<activity android:name=".examples.ListAddDelMulti3" android:label="ListAddDelMulti3" />
+		<activity android:name=".examples.ListIconText" android:label="ListIconText" />
+		<activity android:name=".examples.ListOfViews" android:label="ListOfViews" />
+		<activity android:name=".examples.ManyItem" android:label="ManyItem" />
+		<activity android:name=".examples.Expandable" android:label="Expandable" />
+		<activity android:name=".examples.ListOnly" android:label="ListOnly" />
+		<activity android:name=".examples.OverScroll" android:label="OverScroll" />
+		<activity android:name=".examples.SpinnerTest" android:label="SpinnerTest" />
+		<activity android:name=".examples.GridViewTest" android:label="GridViewTest" />
+		<activity android:name=".examples.GalleryTest" android:label="GalleryTest" />
+    </application>
+
+</manifest>

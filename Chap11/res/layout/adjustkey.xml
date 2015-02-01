@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:hint="서론"
+	android:layout_weight="1"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:hint="본론"
+	android:layout_weight="1"
+	/>
+<EditText  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:hint="결론"
+	android:layout_weight="1"
+	/>
+<Button  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:hint="제출"
+	android:layout_weight="0"
+	/>
+</LinearLayout>

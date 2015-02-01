@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="80dip"
+	android:gravity="bottom"
+	>
+<TextView  
+	android:id="@+id/text" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10dip"
+	android:layout_marginRight="15dip"
+	android:textColor="#ffffff"
+	android:textSize="20sp"
+	android:layout_gravity="bottom"
+	/>
+<EditText
+	android:id="@+id/edit"  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:layout_gravity="bottom"
+	android:layout_marginLeft="10dip"
+	android:layout_marginRight="15dip"
+	android:textColor="#000000"
+	android:textSize="20sp"
+	/>
+</LinearLayout>

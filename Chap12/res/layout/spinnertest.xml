@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<TextView  
+	android:id="@+id/mytext"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="먹고 싶은 과일을 선택하세요."
+	/>
+<Spinner
+	android:id="@+id/myspinner"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	/>
+</LinearLayout>

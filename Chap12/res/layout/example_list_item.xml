@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exam_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dip">
+    
+    <TextView android:id="@+id/exam_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"/>
+    <TextView android:id="@+id/exam_item_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="5dip" />
+	
+</LinearLayout>

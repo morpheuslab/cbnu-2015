@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+<Button
+	android:id="@+id/btn3"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="3개"
+	/>
+<Button
+	android:id="@+id/btn10"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="10개"
+	/>
+</LinearLayout>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+<Button
+	android:id="@+id/btnalways"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="always"
+	/>
+<Button
+	android:id="@+id/btnnever"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="never"
+	/>
+<Button
+	android:id="@+id/btnifscroll"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="ifscroll"
+	/>
+</LinearLayout>
+<ListView
+	android:id="@+id/list"  
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent" 
+	/>
+</LinearLayout>

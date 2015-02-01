@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<EditText  
+	android:id="@+id/edit"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Edit Selection"
+	/>
+<Button
+	android:id="@+id/home"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="Home"
+	/>
+<Button
+	android:id="@+id/end"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="End"
+	/>
+<Button
+	android:id="@+id/selblock"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="Sel Block"
+	/>
+<Button
+	android:id="@+id/selall"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="SelAll"
+	/>
+<Button
+	android:id="@+id/getsel"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="GetSel"
+	/>
+</LinearLayout>

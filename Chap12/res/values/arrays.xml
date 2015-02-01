@@ -1,0 +1,71 @@
+<resources>
+	<string-array name="country">
+		<item>조선</item>
+		<item>옥저</item>
+		<item>동예</item>
+		<item>부여</item>
+		<item>신라</item>
+		<item>고구려</item>
+		<item>백제</item>
+		<item>발해</item>
+		<item>당나라</item>
+		<item>송나라</item>
+		<item>고려</item>
+		<item>대한민국</item>
+		<item>식물나라</item>
+	</string-array>
+	<string-array name="fruits">
+		<item>사과</item>
+		<item>딸기</item>
+		<item>수박</item>
+		<item>바나나</item>
+		<item>감</item>
+		<item>복숭아</item>
+		<item>자두</item>
+	</string-array>
+	<string-array name="foods">
+		<item>짜장면</item>
+		<item>우동</item>
+		<item>짬뽕</item>
+		<item>탕수육</item>
+	</string-array>
+	<string-array name="interpolator">
+		<item>Linear</item>
+		<item>Accelerate</item>
+		<item>Decelerate</item>
+		<item>AccelerateDecelerate</item>
+		<item>Anticipate</item>
+		<item>Bounce</item>
+		<item>Cycle</item>
+		<item>Overshoot</item>
+		<item>AnticipateOvershoot</item>
+	</string-array>
+	<string-array name="listanim">
+		<item>리스트 뷰의 항목들이</item>
+		<item>오른쪽에서 왼쪽으로</item>
+		<item>이동하면서 추가되는</item>
+		<item>레이아웃 애니메이션</item>
+		<item>데모입니다.</item>
+	</string-array>
+	<string-array name="colors">
+		<item>검정</item>
+		<item>흰색</item>
+		<item>짙은 회색</item>
+		<item>회색</item>
+		<item>옅은 회색</item>
+		<item>빨강</item>
+		<item>연두</item>
+		<item>파랑</item>
+		<item>노랑</item>
+		<item>하늘색</item>
+		<item>분홍</item>
+		<item>초록</item>
+		<item>남색</item>
+	</string-array>
+	<string-array name="gradientdir">
+		<item>수직</item>
+		<item>수평</item>
+		<item>우상향</item>
+		<item>우하향</item>
+	</string-array>
+</resources>

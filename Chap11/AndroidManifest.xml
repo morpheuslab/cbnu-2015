@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chap11"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/android:Theme.Holo" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 예제 액티비티 -->
+		<activity android:name=".examples.ReadResource" android:label="ReadResource" />
+		<activity android:name=".examples.ReadResource2" android:label="ReadResource2" />
+		<activity android:name=".examples.StyleTest" android:label="StyleTest" />
+		<activity android:name=".examples.StyleTest2" android:label="StyleTest2" />
+		<activity android:name=".examples.ThemeTest" android:label="ThemeTest" android:theme="@style/mytheme" />
+		<activity android:name=".examples.SystemTheme" android:label="SystemTheme" android:theme="@android:style/Theme.Dialog" />
+		<activity android:name=".examples.TextViewAttr" android:label="TextViewAttr" />
+		<activity android:name=".examples.SpannableTest" android:label="SpannableTest" />
+		<activity android:name=".examples.SpannableTest2" android:label="SpannableTest2" />
+		<activity android:name=".examples.TextViewHtml" android:label="TextViewHtml" />
+		<activity android:name=".examples.EditableTest" android:label="EditableTest" />
+		<activity android:name=".examples.TextChange" android:label="TextChange" />
+		<activity android:name=".examples.GramPrice" android:label="GramPrice" />
+		<activity android:name=".examples.EditLimit" android:label="EditLimit" />
+		<activity android:name=".examples.EditSelect" android:label="EditSelect" />
+		<activity android:name=".examples.InputTypeTest" android:label="InputTypeTest" />
+		<activity android:name=".examples.ShowHideKey" android:label="ShowHideKey" />
+        <activity android:name=".examples.AdjustKey1" android:label="AdjustKey1" />
+		<activity android:name=".examples.AdjustKey2" android:label="AdjustKey2" />
+		<activity android:name=".examples.NoNinePatch" android:label="NoNinePatch" />
+		<activity android:name=".examples.YesNinePatch" android:label="YesNinePatch" />
+		<activity android:name=".examples.ArrowButton" android:label="ArrowButton" />
+		<activity android:name=".examples.RadioCheck" android:label="RadioCheck" />
+		<activity android:name=".examples.FilterTouch" android:label="FilterTouch" />
+		<activity android:name=".examples.ScaleTypeTest" android:label="ScaleTypeTest" />
+		<activity android:name=".examples.ImageViewAttr" android:label="ImageViewAttr" />
+		<activity android:name=".examples.ImageButtonTest" android:label="ImageButtonTest" />
+		<activity android:name=".examples.ButtonDrawable" android:label="ButtonDrawable" />
+		<activity android:name=".examples.ButtonSelector" android:label="ButtonSelector" />
+    </application>
+
+</manifest>

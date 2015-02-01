@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="wrap, wrap. no scaletype"
+	/>
+<ImageView  
+	android:id="@+id/img"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:src="@drawable/toycar"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="300, 100, no scaletype"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="50, 100, no scaletype"
+	/>
+<ImageView  
+	android:layout_width="50px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="fitStart"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="fitStart"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="fitCenter"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="fitCenter"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="fitEnd"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="fitEnd"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="fitXY"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="fitXY"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="330, 100 center"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="center"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="50, 100 center"
+	/>
+<ImageView  
+	android:layout_width="50px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="center"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="330, 100 centerCrop"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="centerCrop"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="50, 100 centerCrop"
+	/>
+<ImageView  
+	android:layout_width="50px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="centerCrop"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="300, 100 centerInside"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="centerInside"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="50, 100 centerInside"
+	/>
+<ImageView  
+	android:layout_width="50px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="centerInside"
+	/>
+
+<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="matrix"
+	/>
+<ImageView  
+	android:layout_width="300px" 
+	android:layout_height="100px" 
+	android:background="#cccccc"
+	android:src="@drawable/toycar"
+	android:scaleType="matrix"
+	/>
+</LinearLayout>
+</ScrollView>	

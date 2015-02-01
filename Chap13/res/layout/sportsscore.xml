@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+<TextView
+	android:id="@+id/blueteam"  
+	android:layout_width="0px"
+	android:layout_weight="1" 
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal" 
+	android:textSize="24sp"
+	android:text="청팀(0세트)"
+	/>
+<TextView
+	android:id="@+id/whiteteam"  
+	android:layout_width="0px"
+	android:layout_weight="1" 
+	android:layout_height="wrap_content" 
+	android:gravity="center_horizontal" 
+	android:textSize="24sp"
+	android:text="백팀(0세트)"
+	/>
+</LinearLayout>
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+<Button
+	android:id="@+id/bluescore"  
+	android:layout_width="0px"
+	android:layout_weight="4" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:textSize="80sp"
+	android:textColor="#ff0000"
+	android:text="0"
+	/>
+<TextView
+	android:layout_width="0px"
+	android:layout_weight="1" 
+	android:layout_height="wrap_content" 
+	android:textSize="80sp"
+	android:gravity="center"
+	android:textColor="#00ff00"
+	android:text=":"
+	/>
+<Button
+	android:id="@+id/whitescore"  
+	android:layout_width="0px"
+	android:layout_weight="4" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:textSize="80sp"
+	android:textColor="#ff0000"
+	android:text="0"
+	/>
+</LinearLayout>
+
+<Button
+	android:id="@+id/cancellast"  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="마지막 득점 취소"
+	/>
+
+<TextView
+	android:id="@+id/elapsetime"  
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:background="#0000ff" 
+	android:textSize="16sp"
+	android:textColor="#ffff00"
+	android:gravity="center"
+	android:text="경기 시작 후 경과 시간"
+	android:padding="4dip"
+	android:layout_margin="4dip"
+	/>
+
+<ScrollView
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:layout_weight="1"
+	android:background="#404040" 
+	android:padding="4dip"
+	android:layout_margin="4dip"
+	>
+<TextView
+	android:id="@+id/history"  
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent" 
+	android:textSize="16sp"
+	android:text="점수 히스토리"
+	android:background="#404040" 
+	/>
+</ScrollView>
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+<Button
+	android:id="@+id/newset"  
+	android:layout_width="0px"
+	android:layout_weight="1" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="세트 종료"
+	/>
+<Button
+	android:id="@+id/newgame"  
+	android:layout_width="0px"
+	android:layout_weight="1" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="새 경기"
+	/>
+<Button
+	android:id="@+id/change"  
+	android:layout_width="0px"
+	android:layout_weight="1" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="좌우 교체"
+	/>
+</LinearLayout>
+</LinearLayout>

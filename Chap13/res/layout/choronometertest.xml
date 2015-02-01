@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<Chronometer
+	android:id="@+id/chrono"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:format="경과시간=%s" 
+	android:textSize="30sp"
+	/>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<Button
+	android:id="@+id/btnstart"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="Start"
+	/>
+<Button
+	android:id="@+id/btnstop"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="Stop"
+	/>
+<Button
+	android:id="@+id/btnreset"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:onClick="mOnClick"
+	android:text="Reset"
+	/>
+</LinearLayout>
+</LinearLayout>

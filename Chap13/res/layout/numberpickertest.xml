@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<NumberPicker
+	android:id="@+id/picker1"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_marginRight="2dp"
+	/>
+<NumberPicker
+	android:id="@+id/picker2"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_marginRight="2dp"
+	/>
+<NumberPicker
+	android:id="@+id/picker3"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_marginRight="2dp"
+	/>
+<NumberPicker
+	android:id="@+id/picker4"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_marginRight="2dp"
+	/>
+<NumberPicker
+	android:id="@+id/picker5"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_marginRight="2dp"
+	/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#c0c0c0"
+	>
+<Switch 
+	android:text="스위치"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+<Switch 
+	android:text="Select gender"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:checked="true"
+	android:textOn="여자"
+	android:textOff="남자"
+	android:textSize="20dp"
+	android:textColor="#ff0000" 
+	android:textStyle="bold"
+	android:typeface="monospace"/>
+<Switch 
+	android:text="캡션을 길게 설정할 수 있으며 정렬도 지정 가능하다."
+	android:singleLine="false"
+	android:gravity="bottom"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+<Switch
+	android:id="@+id/switch1"  
+	android:text="check event"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+</LinearLayout>

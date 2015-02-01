@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+<DatePicker
+	android:id="@+id/datepicker"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:calendarViewShown="false"
+	/>
+<TextView
+	android:id="@+id/txtdate"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textSize="8pt"
+	android:text="date"
+	/>
+<Button
+	android:id="@+id/btnnow"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="선택한 날짜 조사"
+	/>
+</LinearLayout>

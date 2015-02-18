@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.gmail.at.heejincha1219.saverestore.SaveRestoreActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문"
+        android:gravity="center" />
+
+    <CheckBox
+        android:id="@+id/check_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="피자" />
+
+    <CheckBox
+        android:id="@+id/check_spaghetti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스파게티" />
+
+    <TextView
+        android:id="@+id/text_nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="현재 개수 = 0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button_inc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="증가"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/button_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="감소"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+</LinearLayout>
